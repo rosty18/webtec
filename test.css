@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #fefae0;
+    font-family: Amita;
+    margin: 7.5px auto;
+    width: 500px;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 10px double #bc6c25;
+}
+
+.card-container {
+    margin-bottom: -25px;
+    display: flex;
+    justify-content: center; /* Centers the cards horizontally */
+    align-items: center; /* Vertically centers the cards */
+    padding: 180px;
+    background-image:url("https://images.alphacoders.com/128/1286361.jpg");
+    opacity: 10;
+    
+
+}
+
+
+.card {
+    position: relative;
+    width: 470px;
+    height: 380px;
+    overflow: hidden;
+    border: 1px solid #dcdce6;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin: 30px; /* Adds spacing between cards */
+}
+
+.card:hover {
+    transform: scale(1.3);
+}
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.original-image {
+    transition: opacity 0.3s ease;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 5; /* Ensure the hover image is above the original */
+}
+
+.card:hover .original-image {
+    opacity: 0.2;
+    transform: scale(0.0); /* Adjust the scale factor as needed */
+}
+.card:hover .hover-image {
+    opacity: 5 ;
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+.details {
+    margin-top: 20px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    padding:16px;
+    color: #FAF9F6;
+    background-color: black;
+
+}
+.Top {
+   
+    padding: 10px;
+    margin-top: -5px;
+    margin-bottom:25;
+    color: #f7f6f6;
+    background-color: black ;
+    
+
+}
+
